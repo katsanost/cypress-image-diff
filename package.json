@@ -11,7 +11,7 @@
     "lint": "eslint src/ cypress/",
     "test:unit": "jest src/",
     "test:e2e": "npm run build && cypress run --browser chrome --headless",
-    "build": "npx babel src -d dist && npx copyfiles src/reporter/template.hbs dist/reporter/",
+    "build": "npx babel src -d dist && xcopy src\reporter\template.txt dist\reporter\",
     "prepare": "npm run build"
   },
   "repository": {
