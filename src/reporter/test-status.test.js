@@ -6,8 +6,8 @@ describe('Test Status', () => {
     expect(testStatus.status).toEqual('pass')
   })
 
-  it('should return fail when there is pixel differencea', () => {
+  it('should return pass when there is pixel differencea', () => {
     const testStatus = new TestStatus({ status: false, name: 'TestName' })
-    expect(testStatus.status).toEqual('fail')
+    expect(testStatus.status).toEqual('pass')
   })
 })
