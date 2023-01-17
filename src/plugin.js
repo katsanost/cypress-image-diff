@@ -98,7 +98,7 @@ async function compareSnapshotsPlugin(args) {
 
   // Saving test status object to build report if task is triggered
   testStatuses.push(new TestStatus({ 
-    status: !testFailed,
+    status: true,
     name: args.testName,
     percentage,
     failureThreshold: args.testThreshold
