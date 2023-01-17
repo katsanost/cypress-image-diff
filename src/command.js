@@ -18,8 +18,8 @@ const compareSnapshotCommand = defaultScreenshotOptions => {
       const defaultRecurseOptions = {
         limit: 1,
         log: (percentage) => {
-          // const prefix = percentage <= testThreshold ? 'PASS' : 'FAIL'
-          const prefix = 'PASS'
+          const prefix = percentage <= testThreshold ? 'PASS' : 'FAIL'
+          // const prefix = 'PASS'
           cy.log(`${prefix}: Image difference percentage ${percentage}`)
         },
         error: `Image difference greater than threshold: ${testThreshold}`
